@@ -1,73 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>celesta-parent</artifactId>
         <groupId>ru.curs</groupId>
         <version>7.4.39-SNAPSHOT</version>
+        <relativePath>../</relativePath>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
     <artifactId>celesta-maven-plugin</artifactId>
     <name>celesta-maven-plugin</name>
-
     <packaging>maven-plugin</packaging>
 
     <properties>
-        <maven.plugin.api.version>3.9.1</maven.plugin.api.version>
+
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>ru.curs</groupId>
             <artifactId>celesta-core</artifactId>
-            <version>7.4.39-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.squareup</groupId>
             <artifactId>javapoet</artifactId>
-            <version>1.13.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-plugin-api</artifactId>
-            <version>${maven.plugin.api.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-core</artifactId>
-            <version>${maven.plugin.api.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-compat</artifactId>
-            <version>${maven.plugin.api.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.plugin-tools</groupId>
             <artifactId>maven-plugin-annotations</artifactId>
-            <version>3.8.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-artifact</artifactId>
-            <version>${maven.plugin.api.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-project</artifactId>
-            <version>2.2.1</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.maven.plugin-testing</groupId>
             <artifactId>maven-plugin-testing-harness</artifactId>
-            <version>3.3.0</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>

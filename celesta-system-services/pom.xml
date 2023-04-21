@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>celesta-parent</artifactId>
-        <groupId>ru.curs</groupId>
-        <version>7.4.39-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>ru.curs</groupId>
+        <artifactId>celesta-parent</artifactId>
+        <version>7.4.39-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
 
     <artifactId>celesta-system-services</artifactId>
     <name>celesta-system-services</name>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>${javax.annotation-api.version}</version>
+        </dependency>
+        <dependency>
             <groupId>ru.curs</groupId>
             <artifactId>celesta-core</artifactId>
-            <version>7.4.39-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>celesta-parent</artifactId>
         <groupId>ru.curs</groupId>
         <version>7.4.39-SNAPSHOT</version>
+        <relativePath>../</relativePath>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
     <artifactId>celesta-core</artifactId>
     <name>celesta-core</name>
-
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>ru.curs</groupId>
             <artifactId>celesta-sql</artifactId>
-            <version>7.4.39-SNAPSHOT</version>
         </dependency>
 
         <!-- TEST DEPENDENCIES -->
